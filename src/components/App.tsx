@@ -4,7 +4,7 @@ import path from 'path'
 type Props = {
   value?: string
 }
-const MyCookieCM = ({ value = 'en-us' }: Props) => {
+const MyCookieCM = ({ value = 'en' }: Props) => {
   const filePath = path.join(process.cwd(), 'cookieconsent.json')
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const CookiesModalSettings = require(filePath)
@@ -13,7 +13,7 @@ const MyCookieCM = ({ value = 'en-us' }: Props) => {
   let localeObj: any = CookiesModalSettings.json.Locales[value]
 
   if (typeof localeObj === 'undefined') {
-    localeObj = CookiesModalSettings.json.Locales['en-us']
+    localeObj = CookiesModalSettings.json.Locales['en']
   }
 
   return (
