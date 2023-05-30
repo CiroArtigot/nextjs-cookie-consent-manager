@@ -5,7 +5,7 @@
       "ga_id": "your GA code"
     },
     "Locales" : {
-      "en-us" : {
+      "en" : {
         "first_sentence": "This site uses third-party cookies to measure and improve your experience.",
         "second_sentence": "You decide whether to accept or reject them:",
         "more_info_text": "More info",
@@ -13,7 +13,7 @@
         "button_necesary": "Accept",
         "button_accept_all": "Reject"
       },
-      "es-es" : {
+      "es" : {
         "first_sentence": "Este sitio utiliza cookies de terceros para medir y mejorar su experiencia.",
         "second_sentence": "Tu decides si quieres aceptarlas o rechazarlas:",
         "more_info_text": "Más información",

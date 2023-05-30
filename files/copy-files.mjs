@@ -14,7 +14,7 @@ npm ERR! Error: ENOENT: no such file or directory, copyfile 'C:\Users\Ciro\proye
 const scriptPath = resolve(dirname_, '..', 'files', 'cookieconsent.js')
 const publicPath = resolve(dirname_, '..', '..', '..', 'public', 'cookieconsent.js')
 const scriptPath2 = resolve(dirname_, '..', 'files', 'cookieconsent.json')
-const publicPath2 = resolve(dirname_, '..', '..', '..', 'cookieconsent.json')
+const publicPath2 = resolve(dirname_, '..', '..', '..', 'cookieconsent.json.change')
 const scriptPath3 = resolve(dirname_, '..', 'files', 'cookieconsentaccept.js')
 const publicPath3 = resolve(dirname_, '..', '..', '..', 'cookieconsentaccept.js')
 
