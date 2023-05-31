@@ -4,9 +4,8 @@ import path from 'path'
 type Props = {
   value?: string
 }
-const MyCookieCM = ({ value = 'en' }: Props) => {
+const MyCookieCCM = ({ value = 'en' }: Props) => {
   const filePath = path.join(process.cwd(), 'cookieconsent.json')
-  console.log('aqui estamos en: ' + process.cwd())
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const CookiesModalSettings = require(filePath)
 
@@ -88,4 +87,4 @@ const MyCookieCM = ({ value = 'en' }: Props) => {
   )
 }
 
-export default MyCookieCM
+export default MyCookieCCM

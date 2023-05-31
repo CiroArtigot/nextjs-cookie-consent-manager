@@ -1,3 +1,3 @@
-import MyCookieCM from './components/App'
+import MyCookieCCM from './components/App'
 
-export { MyCookieCM }
+export { MyCookieCCM }
