@@ -1,4 +1,4 @@
-# NextJS Cookie Consent Manager
+# NextJS Cookie Consent Manager 🍪🍪🍪
 
 ## Free npm package for managing cookie consent in NextJS projects.
 > This npm package is intended to add cookie consent management to your NextJS project with TypeScript, using Google Consent Mode technology.
@@ -127,9 +127,9 @@ module.exports = {
 ```
 
 ## Contact
-> You can contact me on Linked In or Git Hub
-> https://www.linkedin.com/in/ciroartigot/
-> https://github.com/CiroArtigot 
+> You can contact me on Linked In
+>> 🔵 https://www.linkedin.com/in/ciroartigot/
+
 
 ## License
 

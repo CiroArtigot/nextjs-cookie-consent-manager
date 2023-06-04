@@ -1,6 +1,6 @@
 {
   "name": "nextjs-cookie-consent-manager",
-  "version": "1.5.2-beta",
+  "version": "1.5.3-beta",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -21,10 +21,11 @@
     "postinstall": "node files/copy-files.mjs"
   },
   "keywords": [
-    "react",
-    "typescript",
-    "nextjs",
-    "cookie manager"
+    "React",
+    "Typescript",
+    "Nextjs",
+    "Cookie Manager",
+    "Google Consent Mode"
   ],
   "author": "Ciro Artigot",
   "license": "MIT",
