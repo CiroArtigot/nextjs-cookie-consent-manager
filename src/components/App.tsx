@@ -1,19 +1,29 @@
 import React from 'react'
-import path from 'path'
 
 type Props = {
   value?: string
+  cookiesModalSettings?: any // Configuración de cookies modal como parámetro (opcional)
 }
-const MyCookieCCM = ({ value = 'en' }: Props) => {
-  const filePath = path.join(process.cwd(), 'cookieconsent.json')
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const CookiesModalSettings = require(filePath)
 
-  const CookieMain: any = CookiesModalSettings.json.Main
-  let localeObj: any = CookiesModalSettings.json.Locales[value]
+const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
+  let CookieMain: any = cookiesModalSettings?.json.Main
+  let localeObj: any = cookiesModalSettings?.json.Locales[value]
 
   if (typeof localeObj === 'undefined') {
-    localeObj = CookiesModalSettings.json.Locales['en']
+    localeObj = {
+      first_sentence: 'This site uses third-party cookies to measure and improve your experience.',
+      second_sentence: 'You decide whether to accept or reject them:',
+      more_info_text: 'More info',
+      more_info_link: '/cookies',
+      button_necesary: 'Accept',
+      button_accept_all: 'Reject',
+    }
+  }
+
+  if (typeof CookieMain === 'undefined') {
+    CookieMain = {
+      ga_id: 'your GA code',
+    }
   }
 
   return (
