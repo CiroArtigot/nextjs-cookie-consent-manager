@@ -6,10 +6,6 @@ import { dirname } from 'path'
 const filename = fileURLToPath(import.meta.url)
 const dirname_ = dirname(filename)
 
-/*
-npm ERR! Error: ENOENT: no such file or directory, copyfile 'C:\Users\Ciro\proyectos\sanity-blog\blog-nextjs-sanity\node_modules\testreacttypemodule001\\files\cookieconsent.js' -> 'C:\Users\Ciro\proyectos\sanity-blog\blog-nextjs-sanity\node_modules\testreacttypemodule001\public\cookieconsent.js'
-*/
-
 // Define the paths to your script file and the public folder
 const scriptPath = resolve(dirname_, '..', 'files', 'cookieconsent.js')
 const publicPath = resolve(dirname_, '..', '..', '..', 'public', 'cookieconsent.js')

@@ -1,0 +1,26 @@
+{
+  "id": "cookie_consent",
+  "json": {
+    "Main": {
+      "ga_id": "your GA code"
+    },
+    "Locales" : {
+      "en" : {
+        "first_sentence": "This site uses third-party cookies to measure and improve your experience.",
+        "second_sentence": "You decide whether to accept or reject them:",
+        "more_info_text": "More info",
+        "more_info_link": "/cookies",
+        "button_necesary": "Accept",
+        "button_accept_all": "Reject"
+      },
+      "es" : {
+        "first_sentence": "Este sitio utiliza cookies de terceros para medir y mejorar su experiencia.",
+        "second_sentence": "Tu decides si quieres aceptarlas o rechazarlas:",
+        "more_info_text": "Más información",
+        "more_info_link": "/cookies",
+        "button_necesary": "Rechazar",
+        "button_accept_all": "Aceptar"
+      }
+    } 
+  }
+}
