@@ -20,8 +20,9 @@ Install the package with the following command:
 npm install nextjs-cookie-consent-manager@latest
 ```
 
-Then you must configure your cookieconsent.json on the raiz of your NextJS proyect. 
-If you are developing a multi language site, add you locale configuration to the json and your Google G4 code
+### Rename and configure cookieconsent.json
+
+After installing the package with npm, you will need to configure your cookieconsent.json file in the root of your NextJS project. Rename the example file cookieconsent.json.change to cookieconsent.json and set your Google tracking code in ga_id, and adjust the Locales based on your language configuration.
 
 ```json
 {
