@@ -1,9 +1,10 @@
+# NextJS Cookie Consent Manager
 
-# Free npm package for manage the cookie consent on NextJS projects
+## Free npm package for managing cookie consent in NextJS projects.
+> This npm package is intended to add cookie consent management to your NextJS project with TypeScript, using Google Consent Mode technology.
 
-
-## This package is on a beta version
-> This software is provided ‘as-is’, without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
+## This package is in beta version
+> This software is provided "as is," without any express or implied warranty. The authors will not be held liable for any damages arising from the use of this software.
 
 ## This package works with Google Consent Mode
 
@@ -22,7 +23,7 @@ npm install nextjs-cookie-consent-manager@latest
 Then you must configure your cookieconsent.json on the raiz of your NextJS proyect. 
 If you are developing a multi language site, add you locale configuration to the json and your Google G4 code
 
-```bash
+```json
 {
   "id": "cookie_consent",
   "json": {
@@ -52,7 +53,7 @@ If you are developing a multi language site, add you locale configuration to the
 ```
 
 Create a NexJS component, for example components/CookieConsent.tsx
-```bash
+```js
   import cookiesModalSettings from 'cookieconsent.json';
   import { MyCookieCCM } from 'nextjs-cookie-consent-manager'
 
@@ -71,14 +72,18 @@ Create a NexJS component, for example components/CookieConsent.tsx
 
 Then you can use it on your NextJS Layouts:
 
-```bash
+```tsx
 import CookieAlert from 'components/CookieConsent'
 
   return (
     <>
-      ...
       <CookieAlert locale={locale} />
     </>
   )
-}
+
 ```
+
+
+## License
+
+MIT-licensed. See [LICENSE](LICENSE).
