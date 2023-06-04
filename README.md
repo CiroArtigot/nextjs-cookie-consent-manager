@@ -12,7 +12,7 @@
 
 > <a href="https://support.google.com/analytics/answer/9976101?hl=en">More info of Google Cookie Consent Mode</a>
 
-## Quickstart
+## Quickstart 
 
 Install the package with the following command:
 
@@ -103,7 +103,28 @@ to
 
 ## Tailwind CSS
 
-This package uses TailWind.css to run
+This package uses TailWind.css to run, so you muest add to your tailwind.config.js the module to the content:
+
+```
+'./node_modules/nextjs-cookie-consent-manager/**/*.{js,ts,jsx,tsx}', 
+```
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './plugins/**/*.{js,ts,jsx,tsx}',
+
+    ....
+
+    './node_modules/nextjs-cookie-consent-manager/**/*.{js,ts,jsx,tsx}', 
+  ],
+  theme: {},
+  plugins: [],
+}
+```
 
 ## Contact
 > You can contact me on Linked In or Git Hub
