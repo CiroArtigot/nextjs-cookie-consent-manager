@@ -53,7 +53,11 @@ After installing the package with npm, you will need to configure your cookiecon
 }
 ```
 
-Create a NexJS component, for example components/CookieConsent.tsx
+### Create a NextJs component
+
+Create a new NextJs component, for example components/CookieConsent.tsx
+The MyCookieCCM module need a locale language and the cookiesModalSettings from the cookieconsent.json on your root directory.
+
 ```js
   import cookiesModalSettings from 'cookieconsent.json';
   import { MyCookieCCM } from 'nextjs-cookie-consent-manager'
@@ -71,7 +75,7 @@ Create a NexJS component, for example components/CookieConsent.tsx
   
 ```
 
-Then you can use it on your NextJS Layouts:
+Then you can use the component on your NextJS layouts:
 
 ```tsx
 import CookieAlert from 'components/CookieConsent'
@@ -84,6 +88,27 @@ import CookieAlert from 'components/CookieConsent'
 
 ```
 
+If your site don´t use multi language option yo can can change 
+
+```
+ <CookieAlert locale={locale} />
+```
+
+to
+```
+<CookieAlert locale='es' />
+<CookieAlert locale='en' />
+<CookieAlert locale='fr' />
+```
+
+## Tailwind CSS
+
+This package uses TailWind.css to run
+
+## Contact
+> You can contact me on Linked In or Git Hub
+> https://www.linkedin.com/in/ciroartigot/
+> https://github.com/CiroArtigot 
 
 ## License
 
