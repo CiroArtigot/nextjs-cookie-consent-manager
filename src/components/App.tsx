@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 type Props = {
   value?: string
@@ -92,7 +93,9 @@ const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
         </div>
         <input type={'hidden'} id='gaid' value={CookieMain.ga_id} />
       </div>
-      <script src='/cookieconsent.js' />
+      <Helmet>
+        <script src='/cookieconsent.js' type='text/javascript' />
+      </Helmet>
     </>
   )
 }
