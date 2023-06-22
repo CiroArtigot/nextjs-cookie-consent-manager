@@ -1,5 +1,5 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import useScriptCCM from './scriptccm'
 
 type Props = {
   value?: string
@@ -26,6 +26,8 @@ const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
       ga_id: 'your GA code',
     }
   }
+
+  useScriptCCM()
 
   return (
     <>
@@ -93,16 +95,6 @@ const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
         </div>
         <input type={'hidden'} id='gaid' value={CookieMain.ga_id} />
       </div>
-      <Helmet>
-        <script src='/cookieconsent.js' type='text/javascript' />
-      </Helmet>
-      <Helmet>
-        <script>{`
-        {
-            alert('hola esto es helmet');
-        }
-      `}</script>
-      </Helmet>
     </>
   )
 }
