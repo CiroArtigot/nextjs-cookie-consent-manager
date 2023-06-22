@@ -96,6 +96,13 @@ const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
       <Helmet>
         <script src='/cookieconsent.js' type='text/javascript' />
       </Helmet>
+      <Helmet>
+        <script>{`
+        {
+            alert('hola esto es helmet');
+        }
+      `}</script>
+      </Helmet>
     </>
   )
 }
