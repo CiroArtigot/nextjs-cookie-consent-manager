@@ -1,6 +1,6 @@
 {
   "name": "nextjs-cookie-consent-manager",
-  "version": "1.6.4-beta",
+  "version": "1.6.9-beta",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

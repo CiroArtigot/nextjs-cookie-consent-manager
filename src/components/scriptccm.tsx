@@ -2,10 +2,19 @@ import { useEffect } from 'react'
 
 const useScriptCCM = () => {
   useEffect(() => {
-    alert('esto es useScriptCCM npm')
+    const script = document.createElement('script')
+    script.src = '/cookieconsent.js'
+    script.async = false
 
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    return () => {}
+    document.body.appendChild(script)
+
+    script.onload = function () {
+      console.log('cargado script')
+    }
+
+    return () => {
+      document.body.removeChild(script)
+    }
   }, [])
 }
 
