@@ -27,7 +27,7 @@ const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
     }
   }
 
-  //useScriptCCM()
+  useScriptCCM()
 
   return (
     <>
