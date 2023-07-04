@@ -1,5 +1,4 @@
 import React from 'react'
-import useScriptCCM from './scriptccm'
 
 type Props = {
   value?: string
@@ -26,8 +25,6 @@ const MyCookieCCM = ({ value = 'en', cookiesModalSettings }: Props) => {
       ga_id: 'your GA code',
     }
   }
-
-  useScriptCCM()
 
   return (
     <>
